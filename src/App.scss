@@ -1,17 +1,19 @@
+$theme-color: ("btn-bg-color":#4CAF50, "color": white );
+$dark-theme-color: ("btn-bg-color":#FFFFFF, "color": white );
+
 .App {
   text-align: center;
 }
 
 .App-dark {
-  background-color: #121212;
+  background-color: map-get($dark-theme-color,"btn-bg-color");
   text-align: center;
-
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: map-get($theme-color,"btn-bg-color");
   border: none;
-  color: white;
+  color: map-get($theme-color,"color");
   margin: 2%;
   padding: 8px 25px;
   text-align: center;
@@ -22,7 +24,7 @@
 .button-dark {
   background-color: #03dac6; /* Green */
   border: none;
-  color: black;
+  color: map-get($dark-theme-color , "color");
   margin: 2%;
   padding: 8px 25px;
   text-align: center;
@@ -35,5 +37,5 @@ h1{
 }
 
 .h1-dark {
-  color: white;
+  color: map-get($theme-color,"color");
 }

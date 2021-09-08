@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import './App.css';
+import './App.scss';
 import { Child } from './Child';
 import { Theme, ThemeContext } from './ThemeContext';
 
